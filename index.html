@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería vertical</title>
+
+<style>
+    body {
+        margin: 0;
+        background: black;
+        overflow: hidden;
+    }
+
+    .carousel {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .track {
+        display: flex;
+        flex-direction: column;
+        animation: scrollVertical 40s linear infinite;
+    }
+
+    .track img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    @keyframes scrollVertical {
+        from { transform: translateY(0); }
+        to   { transform: translateY(-50%); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="carousel">
+  <div class="track">
+    <img src="img1.png">
+    <img src="img2.png">
+    <img src="img3.png">
+    <img src="img4.png">
+    <img src="img5.png">
+    <img src="img6.png">
+    <img src="img7.png">
+    <img src="img8.png">
+    <img src="img9.png">
+    <img src="img10.png">
+
+    <!-- duplicado -->
+    <img src="img1.png">
+    <img src="img2.png">
+    <img src="img3.png">
+    <img src="img4.png">
+    <img src="img5.png">
+    <img src="img6.png">
+    <img src="img7.png">
+    <img src="img8.png">
+    <img src="img9.png">
+    <img src="img10.png">
+  </div>
+</div>
+
+</body>
+</html>
